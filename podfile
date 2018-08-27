@@ -1,0 +1,8 @@
+platform :ios,'9.0'
+target 'TractorApp' do
+#pod 'AMap3DMap' #3D地图SDK   #因为过大无法上传,请pull后自行打开然后pod install
+pod 'MJRefresh', '~> 3.1.15.3'
+pod 'AFNetworking', '~> 3.2.1'
+pod 'MBProgressHUD', '~> 1.1.0'
+#pod 'SAMKeychain', '~> 1.5.3'
+end

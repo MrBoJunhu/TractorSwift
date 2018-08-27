@@ -1,0 +1,6 @@
+framework module Pods_TractorApp {
+  umbrella header "Pods-TractorApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapBaseViewController" customModule="TractorApp" customModuleProvider="target">
+            <connections>
+                <outlet property="mapView" destination="IU6-2P-paX" id="cA4-mt-ogR"/>
+                <outlet property="starBtn" destination="tlS-N9-IqK" id="oHr-fa-zgK"/>
+                <outlet property="trackBtn" destination="Zm3-7G-ZQg" id="6lc-kn-sQK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IU6-2P-paX" customClass="MAMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcj-ne-3dQ">
+                    <rect key="frame" x="5" y="617" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="MEC-q7-1QQ"/>
+                        <constraint firstAttribute="height" constant="40" id="eYg-nR-4au"/>
+                    </constraints>
+                    <state key="normal" image="gpsStat1"/>
+                    <state key="selected" image="gpsStat2"/>
+                    <connections>
+                        <action selector="clickLoactionBtn:" destination="-1" eventType="touchUpInside" id="nc4-SI-REo"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k6Z-L0-9vE">
+                    <rect key="frame" x="335" y="70" width="35" height="75"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlS-N9-IqK">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="33.5"/>
+                            <color key="backgroundColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="卫星0"/>
+                            <state key="selected" image="卫星2"/>
+                            <connections>
+                                <action selector="clickStarBtn:" destination="-1" eventType="touchUpInside" id="T3q-a9-DPT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zm3-7G-ZQg">
+                            <rect key="frame" x="0.0" y="41.5" width="35" height="33.5"/>
+                            <color key="backgroundColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="0.72886344179999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="红绿灯-1"/>
+                            <state key="selected" image="红绿灯-2"/>
+                            <connections>
+                                <action selector="clickTrackBtn:" destination="-1" eventType="touchUpInside" id="TrN-We-2R0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Zm3-7G-ZQg" firstAttribute="height" secondItem="tlS-N9-IqK" secondAttribute="height" id="77k-C3-uqw"/>
+                        <constraint firstItem="Zm3-7G-ZQg" firstAttribute="width" secondItem="tlS-N9-IqK" secondAttribute="width" id="ZLw-bs-OXc"/>
+                        <constraint firstAttribute="width" constant="35" id="cKL-gu-Zpa"/>
+                        <constraint firstAttribute="height" constant="75" id="kx8-Oy-Dwr"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7pb-2f-WY1">
+                    <rect key="frame" x="335" y="587" width="35" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0P-Z4-KGz">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                            <state key="normal" image="increase"/>
+                            <connections>
+                                <action selector="clickIncreaseAction:" destination="-1" eventType="touchUpInside" id="1xg-Gw-Tfu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWp-9z-Aae">
+                            <rect key="frame" x="0.0" y="35" width="35" height="35"/>
+                            <state key="normal" image="decrease"/>
+                            <connections>
+                                <action selector="clickDecreaseAction:" destination="-1" eventType="touchUpInside" id="hd8-53-p6a"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="TWp-9z-Aae" firstAttribute="height" secondItem="A0P-Z4-KGz" secondAttribute="height" id="Ut5-AF-74t"/>
+                        <constraint firstAttribute="height" constant="70" id="e2r-tV-IeG"/>
+                        <constraint firstItem="TWp-9z-Aae" firstAttribute="width" secondItem="A0P-Z4-KGz" secondAttribute="width" id="emt-7J-fP9"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IU6-2P-paX" secondAttribute="bottom" id="1UD-BE-1ae"/>
+                <constraint firstAttribute="trailing" secondItem="IU6-2P-paX" secondAttribute="trailing" id="OqD-AB-H0j"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k6Z-L0-9vE" secondAttribute="trailing" constant="5" id="RjU-ln-ARo"/>
+                <constraint firstItem="IU6-2P-paX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YSn-wR-5ca"/>
+                <constraint firstItem="k6Z-L0-9vE" firstAttribute="trailing" secondItem="7pb-2f-WY1" secondAttribute="trailing" id="ZFx-mr-1ak"/>
+                <constraint firstItem="fcj-ne-3dQ" firstAttribute="bottom" secondItem="7pb-2f-WY1" secondAttribute="bottom" id="eCh-cc-RuN"/>
+                <constraint firstItem="fcj-ne-3dQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="gWD-1Z-3CR"/>
+                <constraint firstItem="k6Z-L0-9vE" firstAttribute="width" secondItem="7pb-2f-WY1" secondAttribute="width" id="hKs-vt-gHu"/>
+                <constraint firstItem="k6Z-L0-9vE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="i9h-se-yLX"/>
+                <constraint firstItem="IU6-2P-paX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vE0-ap-OiL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fcj-ne-3dQ" secondAttribute="bottom" constant="10" id="yw2-kk-gMO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="decrease" width="53" height="49"/>
+        <image name="gpsStat1" width="28" height="28"/>
+        <image name="gpsStat2" width="28" height="28"/>
+        <image name="increase" width="53" height="49"/>
+        <image name="卫星0" width="64" height="64"/>
+        <image name="卫星2" width="64" height="64"/>
+        <image name="红绿灯-1" width="128" height="128"/>
+        <image name="红绿灯-2" width="128" height="128"/>
+    </resources>
+</document>

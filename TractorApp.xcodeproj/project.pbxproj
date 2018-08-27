@@ -1,0 +1,953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C1E42D2A09EEF3AE6092E29 /* libPods-TractorApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191A28046E4B3F66EEE74E3 /* libPods-TractorApp.a */; };
+		A502341B212FC0FE00A79474 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502341A212FC0FE00A79474 /* LoginTableViewController.swift */; };
+		A502341D212FC69800A79474 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502341C212FC69800A79474 /* HomeTabBarController.swift */; };
+		A502341F212FC9C600A79474 /* ResetPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502341E212FC9C600A79474 /* ResetPasswordTableViewController.swift */; };
+		A5023422212FCD1E00A79474 /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5023421212FCD1E00A79474 /* AppSetting.swift */; };
+		A5023424212FDCE100A79474 /* BBScrollButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5023423212FDCE100A79474 /* BBScrollButtonView.swift */; };
+		A5023426213002D800A79474 /* BBHandleCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5023425213002D800A79474 /* BBHandleCustomView.swift */; };
+		A526F06F212F865500A40FB0 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526F06E212F865500A40FB0 /* NetworkRequest.swift */; };
+		A526F071212F866900A40FB0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526F070212F866900A40FB0 /* NetworkManager.swift */; };
+		A526F073212F8BFA00A40FB0 /* HttpUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526F072212F8BFA00A40FB0 /* HttpUrl.swift */; };
+		A526F075212F9A0000A40FB0 /* NetworkReqeust+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526F074212F9A0000A40FB0 /* NetworkReqeust+Extension.swift */; };
+		A526F079212FA36200A40FB0 /* StructFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526F078212FA36200A40FB0 /* StructFile.swift */; };
+		A528DC17212FB058003522C8 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A528DC16212FB058003522C8 /* UIButton+Extension.swift */; };
+		A52EE41D21339ED30075EF83 /* MapNavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52EE41C21339ED30075EF83 /* MapNavigationHelper.swift */; };
+		A52F828521338F9400ED6108 /* MapDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F828421338F9400ED6108 /* MapDialogView.swift */; };
+		A52F828721338F9D00ED6108 /* MapDialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A52F828621338F9D00ED6108 /* MapDialogView.xib */; };
+		A55A05F7212C10F70028F79B /* MapBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A05F5212C10F70028F79B /* MapBaseViewController.swift */; };
+		A55A05F8212C10F70028F79B /* MapBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55A05F6212C10F70028F79B /* MapBaseViewController.xib */; };
+		A55A05FA212C11BD0028F79B /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A05F9212C11BD0028F79B /* AppKeys.swift */; };
+		A56EC9F321339B2000E7EBC0 /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EC9F221339B2000E7EBC0 /* MapDataManager.swift */; };
+		A5DB490B212BDA3B00E86CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB490A212BDA3B00E86CA6 /* AppDelegate.swift */; };
+		A5DB4910212BDA3B00E86CA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DB490E212BDA3B00E86CA6 /* Main.storyboard */; };
+		A5DB4912212BDA3D00E86CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DB4911212BDA3D00E86CA6 /* Assets.xcassets */; };
+		A5DB4915212BDA3D00E86CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DB4913212BDA3D00E86CA6 /* LaunchScreen.storyboard */; };
+		A5DB4920212BDA3D00E86CA6 /* TractorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB491F212BDA3D00E86CA6 /* TractorAppTests.swift */; };
+		A5DB492B212BDA3D00E86CA6 /* TractorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB492A212BDA3D00E86CA6 /* TractorAppUITests.swift */; };
+		A5DB493C212BDCC700E86CA6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB493B212BDCC700E86CA6 /* BaseViewController.swift */; };
+		A5DB493E212BDCE600E86CA6 /* BaseUINavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB493D212BDCE600E86CA6 /* BaseUINavigationViewController.swift */; };
+		A5DB4941212BDD7F00E86CA6 /* ColorFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB4940212BDD7F00E86CA6 /* ColorFile.swift */; };
+		A5DB4943212BDE0F00E86CA6 /* BaseUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB4942212BDE0F00E86CA6 /* BaseUITabBarController.swift */; };
+		A5DB4946212BDE8700E86CA6 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB4945212BDE8700E86CA6 /* HomepageViewController.swift */; };
+		A5DB4948212BDEF800E86CA6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB4947212BDEF800E86CA6 /* ListViewController.swift */; };
+		A5DB494A212BDF0800E86CA6 /* KnowledgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB4949212BDF0800E86CA6 /* KnowledgeViewController.swift */; };
+		A5DB494C212BDF1B00E86CA6 /* MineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB494B212BDF1B00E86CA6 /* MineTableViewController.swift */; };
+		A5DB494F212BE14E00E86CA6 /* AppDelegate+Exensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB494E212BE14E00E86CA6 /* AppDelegate+Exensions.swift */; };
+		A5DB4958212BFA8500E86CA6 /* ColorCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB4957212BFA8500E86CA6 /* ColorCategory.swift */; };
+		A5E1A1D8212E423500DE1A69 /* UITableViewCell+XIBCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1A1D7212E423500DE1A69 /* UITableViewCell+XIBCategory.swift */; };
+		A5E1A1DC212E453800DE1A69 /* TractorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1A1DA212E453800DE1A69 /* TractorListViewController.swift */; };
+		A5E1A1DD212E453800DE1A69 /* TractorListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E1A1DB212E453800DE1A69 /* TractorListViewController.xib */; };
+		A5E1A1E0212E5C2500DE1A69 /* CollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1A1DE212E5C2500DE1A69 /* CollectViewController.swift */; };
+		A5E1A1E3212E7C8A00DE1A69 /* KnowledgeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1A1E2212E7C8A00DE1A69 /* KnowledgeDetailViewController.swift */; };
+		A5E1A1E6212E80EC00DE1A69 /* NormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1A1E4212E80EC00DE1A69 /* NormalTableViewCell.swift */; };
+		A5E1A1E7212E80EC00DE1A69 /* NormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E1A1E5212E80EC00DE1A69 /* NormalTableViewCell.xib */; };
+		A5E1A1EA212E87B800DE1A69 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1A1E8212E87B800DE1A69 /* SearchViewController.swift */; };
+		A5E1A1EB212E87B800DE1A69 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E1A1E9212E87B800DE1A69 /* SearchViewController.xib */; };
+		A5E1A1ED212E8A8400DE1A69 /* MapDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1A1EC212E8A8400DE1A69 /* MapDetailViewController.swift */; };
+		A5E1A1F1212E8B9100DE1A69 /* ConfigBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1A1EF212E8B9100DE1A69 /* ConfigBaseViewController.swift */; };
+		A5E1A1F6212E8FBC00DE1A69 /* UIView+ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1A1F5212E8FBC00DE1A69 /* UIView+ProgressHUD.swift */; };
+		A5E1A1F8212E8FD200DE1A69 /* UIViewController+ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1A1F7212E8FD200DE1A69 /* UIViewController+ProgressHUD.swift */; };
+		A5F3C827212D3B57009D3209 /* InforListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3C825212D3B57009D3209 /* InforListTableViewCell.swift */; };
+		A5F3C828212D3B57009D3209 /* InforListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F3C826212D3B57009D3209 /* InforListTableViewCell.xib */; };
+		A5FE2604212CEA0F00A36F16 /* UIView+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FE2603212CEA0F00A36F16 /* UIView+Category.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5DB491C212BDA3D00E86CA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5DB48FF212BDA3B00E86CA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5DB4906212BDA3B00E86CA6;
+			remoteInfo = TractorApp;
+		};
+		A5DB4927212BDA3D00E86CA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5DB48FF212BDA3B00E86CA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5DB4906212BDA3B00E86CA6;
+			remoteInfo = TractorApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0178B2123CB3E6A62DD48C42 /* Pods-TractorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TractorApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TractorApp/Pods-TractorApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8191A28046E4B3F66EEE74E3 /* libPods-TractorApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TractorApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A502341A212FC0FE00A79474 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		A502341C212FC69800A79474 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		A502341E212FC9C600A79474 /* ResetPasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordTableViewController.swift; sourceTree = "<group>"; };
+		A5023421212FCD1E00A79474 /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		A5023423212FDCE100A79474 /* BBScrollButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBScrollButtonView.swift; sourceTree = "<group>"; };
+		A5023425213002D800A79474 /* BBHandleCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBHandleCustomView.swift; sourceTree = "<group>"; };
+		A526F06E212F865500A40FB0 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		A526F070212F866900A40FB0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A526F072212F8BFA00A40FB0 /* HttpUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUrl.swift; sourceTree = "<group>"; };
+		A526F074212F9A0000A40FB0 /* NetworkReqeust+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkReqeust+Extension.swift"; sourceTree = "<group>"; };
+		A526F078212FA36200A40FB0 /* StructFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructFile.swift; sourceTree = "<group>"; };
+		A528DC16212FB058003522C8 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		A52EE41C21339ED30075EF83 /* MapNavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNavigationHelper.swift; sourceTree = "<group>"; };
+		A52F828421338F9400ED6108 /* MapDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDialogView.swift; sourceTree = "<group>"; };
+		A52F828621338F9D00ED6108 /* MapDialogView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapDialogView.xib; sourceTree = "<group>"; };
+		A53AE050212C18F70019E20A /* TractorApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TractorApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		A55A05F5212C10F70028F79B /* MapBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBaseViewController.swift; sourceTree = "<group>"; };
+		A55A05F6212C10F70028F79B /* MapBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapBaseViewController.xib; sourceTree = "<group>"; };
+		A55A05F9212C11BD0028F79B /* AppKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeys.swift; sourceTree = "<group>"; };
+		A56EC9F221339B2000E7EBC0 /* MapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
+		A5792EA02133F44000D40A34 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5792EA22133F44000D40A34 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5792EA42133F44000D40A34 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DB4907212BDA3B00E86CA6 /* TractorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TractorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DB490A212BDA3B00E86CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5DB490F212BDA3B00E86CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5DB4911212BDA3D00E86CA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5DB4914212BDA3D00E86CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5DB4916212BDA3D00E86CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DB491B212BDA3D00E86CA6 /* TractorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TractorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DB491F212BDA3D00E86CA6 /* TractorAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TractorAppTests.swift; sourceTree = "<group>"; };
+		A5DB4921212BDA3D00E86CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DB4926212BDA3D00E86CA6 /* TractorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TractorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DB492A212BDA3D00E86CA6 /* TractorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TractorAppUITests.swift; sourceTree = "<group>"; };
+		A5DB492C212BDA3D00E86CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DB493B212BDCC700E86CA6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A5DB493D212BDCE600E86CA6 /* BaseUINavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUINavigationViewController.swift; sourceTree = "<group>"; };
+		A5DB4940212BDD7F00E86CA6 /* ColorFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFile.swift; sourceTree = "<group>"; };
+		A5DB4942212BDE0F00E86CA6 /* BaseUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITabBarController.swift; sourceTree = "<group>"; };
+		A5DB4945212BDE8700E86CA6 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		A5DB4947212BDEF800E86CA6 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		A5DB4949212BDF0800E86CA6 /* KnowledgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeViewController.swift; sourceTree = "<group>"; };
+		A5DB494B212BDF1B00E86CA6 /* MineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTableViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		A5DB494E212BE14E00E86CA6 /* AppDelegate+Exensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Exensions.swift"; sourceTree = "<group>"; };
+		A5DB4957212BFA8500E86CA6 /* ColorCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCategory.swift; sourceTree = "<group>"; };
+		A5E1A1D7212E423500DE1A69 /* UITableViewCell+XIBCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+XIBCategory.swift"; sourceTree = "<group>"; };
+		A5E1A1DA212E453800DE1A69 /* TractorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TractorListViewController.swift; sourceTree = "<group>"; };
+		A5E1A1DB212E453800DE1A69 /* TractorListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TractorListViewController.xib; sourceTree = "<group>"; };
+		A5E1A1DE212E5C2500DE1A69 /* CollectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectViewController.swift; sourceTree = "<group>"; };
+		A5E1A1E2212E7C8A00DE1A69 /* KnowledgeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeDetailViewController.swift; sourceTree = "<group>"; };
+		A5E1A1E4212E80EC00DE1A69 /* NormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTableViewCell.swift; sourceTree = "<group>"; };
+		A5E1A1E5212E80EC00DE1A69 /* NormalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalTableViewCell.xib; sourceTree = "<group>"; };
+		A5E1A1E8212E87B800DE1A69 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A5E1A1E9212E87B800DE1A69 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		A5E1A1EC212E8A8400DE1A69 /* MapDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailViewController.swift; sourceTree = "<group>"; };
+		A5E1A1EF212E8B9100DE1A69 /* ConfigBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigBaseViewController.swift; sourceTree = "<group>"; };
+		A5E1A1F5212E8FBC00DE1A69 /* UIView+ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ProgressHUD.swift"; sourceTree = "<group>"; };
+		A5E1A1F7212E8FD200DE1A69 /* UIViewController+ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ProgressHUD.swift"; sourceTree = "<group>"; };
+		A5F3C825212D3B57009D3209 /* InforListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InforListTableViewCell.swift; sourceTree = "<group>"; };
+		A5F3C826212D3B57009D3209 /* InforListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InforListTableViewCell.xib; sourceTree = "<group>"; };
+		A5FE2603212CEA0F00A36F16 /* UIView+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Category.swift"; sourceTree = "<group>"; };
+		E4D11DDFC6CBD3CE563CEA09 /* Pods-TractorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TractorApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TractorApp/Pods-TractorApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5DB4904212BDA3B00E86CA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1E42D2A09EEF3AE6092E29 /* libPods-TractorApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DB4918212BDA3D00E86CA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DB4923212BDA3D00E86CA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A526F06B212F861700A40FB0 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				A526F06E212F865500A40FB0 /* NetworkRequest.swift */,
+				A526F074212F9A0000A40FB0 /* NetworkReqeust+Extension.swift */,
+				A526F070212F866900A40FB0 /* NetworkManager.swift */,
+				A526F072212F8BFA00A40FB0 /* HttpUrl.swift */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		A526F07B212FAC5100A40FB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A526F078212FA36200A40FB0 /* StructFile.swift */,
+				A56EC9F221339B2000E7EBC0 /* MapDataManager.swift */,
+				A52EE41C21339ED30075EF83 /* MapNavigationHelper.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A528DC11212FAEAA003522C8 /* Logins */ = {
+			isa = PBXGroup;
+			children = (
+				A502341A212FC0FE00A79474 /* LoginTableViewController.swift */,
+				A502341E212FC9C600A79474 /* ResetPasswordTableViewController.swift */,
+			);
+			path = Logins;
+			sourceTree = "<group>";
+		};
+		A55A05F4212C10CC0028F79B /* MapVCs */ = {
+			isa = PBXGroup;
+			children = (
+				A55A05F5212C10F70028F79B /* MapBaseViewController.swift */,
+				A55A05F6212C10F70028F79B /* MapBaseViewController.xib */,
+				A5E1A1EC212E8A8400DE1A69 /* MapDetailViewController.swift */,
+			);
+			path = MapVCs;
+			sourceTree = "<group>";
+		};
+		A5DB48FE212BDA3B00E86CA6 = {
+			isa = PBXGroup;
+			children = (
+				A5DB4909212BDA3B00E86CA6 /* TractorApp */,
+				A5DB491E212BDA3D00E86CA6 /* TractorAppTests */,
+				A5DB4929212BDA3D00E86CA6 /* TractorAppUITests */,
+				A5DB4908212BDA3B00E86CA6 /* Products */,
+				FD762251E127E4838C264D7C /* Pods */,
+				F621E077EFFFF72FD6AF67EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5DB4908212BDA3B00E86CA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB4907212BDA3B00E86CA6 /* TractorApp.app */,
+				A5DB491B212BDA3D00E86CA6 /* TractorAppTests.xctest */,
+				A5DB4926212BDA3D00E86CA6 /* TractorAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5DB4909212BDA3B00E86CA6 /* TractorApp */ = {
+			isa = PBXGroup;
+			children = (
+				A526F07B212FAC5100A40FB0 /* Models */,
+				A526F06B212F861700A40FB0 /* Networks */,
+				A5F3C822212D3B14009D3209 /* Views */,
+				A5DB4956212BFA6D00E86CA6 /* Category */,
+				A5DB494D212BDF9600E86CA6 /* Appdelegate */,
+				A5DB4944212BDE2A00E86CA6 /* Controllers */,
+				A5DB493F212BDD6A00E86CA6 /* AppConfig */,
+				A5DB493A212BDCAB00E86CA6 /* BaseVCs */,
+				A5DB490E212BDA3B00E86CA6 /* Main.storyboard */,
+				A5DB4911212BDA3D00E86CA6 /* Assets.xcassets */,
+				A5DB4913212BDA3D00E86CA6 /* LaunchScreen.storyboard */,
+				A5DB4916212BDA3D00E86CA6 /* Info.plist */,
+				A53AE050212C18F70019E20A /* TractorApp-Bridging-Header.h */,
+			);
+			path = TractorApp;
+			sourceTree = "<group>";
+		};
+		A5DB491E212BDA3D00E86CA6 /* TractorAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB491F212BDA3D00E86CA6 /* TractorAppTests.swift */,
+				A5DB4921212BDA3D00E86CA6 /* Info.plist */,
+			);
+			path = TractorAppTests;
+			sourceTree = "<group>";
+		};
+		A5DB4929212BDA3D00E86CA6 /* TractorAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB492A212BDA3D00E86CA6 /* TractorAppUITests.swift */,
+				A5DB492C212BDA3D00E86CA6 /* Info.plist */,
+			);
+			path = TractorAppUITests;
+			sourceTree = "<group>";
+		};
+		A5DB493A212BDCAB00E86CA6 /* BaseVCs */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB493B212BDCC700E86CA6 /* BaseViewController.swift */,
+				A5DB493D212BDCE600E86CA6 /* BaseUINavigationViewController.swift */,
+				A5DB4942212BDE0F00E86CA6 /* BaseUITabBarController.swift */,
+				A502341C212FC69800A79474 /* HomeTabBarController.swift */,
+			);
+			path = BaseVCs;
+			sourceTree = "<group>";
+		};
+		A5DB493F212BDD6A00E86CA6 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A5023421212FCD1E00A79474 /* AppSetting.swift */,
+				A5DB4940212BDD7F00E86CA6 /* ColorFile.swift */,
+				A55A05F9212C11BD0028F79B /* AppKeys.swift */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		A5DB4944212BDE2A00E86CA6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A528DC11212FAEAA003522C8 /* Logins */,
+				A5E1A1EE212E8B7200DE1A69 /* ConfigVCs */,
+				A5E1A1D9212E450000DE1A69 /* TractorListVC */,
+				A55A05F4212C10CC0028F79B /* MapVCs */,
+				A5DB4945212BDE8700E86CA6 /* HomepageViewController.swift */,
+				A5DB4947212BDEF800E86CA6 /* ListViewController.swift */,
+				A5DB4949212BDF0800E86CA6 /* KnowledgeViewController.swift */,
+				A5E1A1E2212E7C8A00DE1A69 /* KnowledgeDetailViewController.swift */,
+				A5DB494B212BDF1B00E86CA6 /* MineTableViewController.swift */,
+				A5E1A1DE212E5C2500DE1A69 /* CollectViewController.swift */,
+				A5E1A1E8212E87B800DE1A69 /* SearchViewController.swift */,
+				A5E1A1E9212E87B800DE1A69 /* SearchViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A5DB494D212BDF9600E86CA6 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB490A212BDA3B00E86CA6 /* AppDelegate.swift */,
+				A5DB494E212BE14E00E86CA6 /* AppDelegate+Exensions.swift */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		A5DB4956212BFA6D00E86CA6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB4957212BFA8500E86CA6 /* ColorCategory.swift */,
+				A5FE2603212CEA0F00A36F16 /* UIView+Category.swift */,
+				A528DC16212FB058003522C8 /* UIButton+Extension.swift */,
+				A5E1A1D7212E423500DE1A69 /* UITableViewCell+XIBCategory.swift */,
+				A5E1A1F5212E8FBC00DE1A69 /* UIView+ProgressHUD.swift */,
+				A5E1A1F7212E8FD200DE1A69 /* UIViewController+ProgressHUD.swift */,
+				A5023423212FDCE100A79474 /* BBScrollButtonView.swift */,
+				A5023425213002D800A79474 /* BBHandleCustomView.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A5E1A1D9212E450000DE1A69 /* TractorListVC */ = {
+			isa = PBXGroup;
+			children = (
+				A5E1A1DA212E453800DE1A69 /* TractorListViewController.swift */,
+				A5E1A1DB212E453800DE1A69 /* TractorListViewController.xib */,
+			);
+			path = TractorListVC;
+			sourceTree = "<group>";
+		};
+		A5E1A1EE212E8B7200DE1A69 /* ConfigVCs */ = {
+			isa = PBXGroup;
+			children = (
+				A5E1A1EF212E8B9100DE1A69 /* ConfigBaseViewController.swift */,
+			);
+			path = ConfigVCs;
+			sourceTree = "<group>";
+		};
+		A5F3C822212D3B14009D3209 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5F3C825212D3B57009D3209 /* InforListTableViewCell.swift */,
+				A5F3C826212D3B57009D3209 /* InforListTableViewCell.xib */,
+				A5E1A1E4212E80EC00DE1A69 /* NormalTableViewCell.swift */,
+				A5E1A1E5212E80EC00DE1A69 /* NormalTableViewCell.xib */,
+				A52F828421338F9400ED6108 /* MapDialogView.swift */,
+				A52F828621338F9D00ED6108 /* MapDialogView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F621E077EFFFF72FD6AF67EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5792EA02133F44000D40A34 /* AFNetworking.framework */,
+				A5792EA22133F44000D40A34 /* MBProgressHUD.framework */,
+				A5792EA42133F44000D40A34 /* MJRefresh.framework */,
+				8191A28046E4B3F66EEE74E3 /* libPods-TractorApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD762251E127E4838C264D7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0178B2123CB3E6A62DD48C42 /* Pods-TractorApp.debug.xcconfig */,
+				E4D11DDFC6CBD3CE563CEA09 /* Pods-TractorApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5DB4906212BDA3B00E86CA6 /* TractorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5DB492F212BDA3D00E86CA6 /* Build configuration list for PBXNativeTarget "TractorApp" */;
+			buildPhases = (
+				2091E3549228D2B26296AD7A /* [CP] Check Pods Manifest.lock */,
+				A5DB4903212BDA3B00E86CA6 /* Sources */,
+				A5DB4904212BDA3B00E86CA6 /* Frameworks */,
+				A5DB4905212BDA3B00E86CA6 /* Resources */,
+				EB16383E3B84B4DD89403773 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TractorApp;
+			productName = TractorApp;
+			productReference = A5DB4907212BDA3B00E86CA6 /* TractorApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5DB491A212BDA3D00E86CA6 /* TractorAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5DB4932212BDA3D00E86CA6 /* Build configuration list for PBXNativeTarget "TractorAppTests" */;
+			buildPhases = (
+				A5DB4917212BDA3D00E86CA6 /* Sources */,
+				A5DB4918212BDA3D00E86CA6 /* Frameworks */,
+				A5DB4919212BDA3D00E86CA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5DB491D212BDA3D00E86CA6 /* PBXTargetDependency */,
+			);
+			name = TractorAppTests;
+			productName = TractorAppTests;
+			productReference = A5DB491B212BDA3D00E86CA6 /* TractorAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5DB4925212BDA3D00E86CA6 /* TractorAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5DB4935212BDA3D00E86CA6 /* Build configuration list for PBXNativeTarget "TractorAppUITests" */;
+			buildPhases = (
+				A5DB4922212BDA3D00E86CA6 /* Sources */,
+				A5DB4923212BDA3D00E86CA6 /* Frameworks */,
+				A5DB4924212BDA3D00E86CA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5DB4928212BDA3D00E86CA6 /* PBXTargetDependency */,
+			);
+			name = TractorAppUITests;
+			productName = TractorAppUITests;
+			productReference = A5DB4926212BDA3D00E86CA6 /* TractorAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5DB48FF212BDA3B00E86CA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = BillBo;
+				TargetAttributes = {
+					A5DB4906212BDA3B00E86CA6 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					A5DB491A212BDA3D00E86CA6 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A5DB4906212BDA3B00E86CA6;
+					};
+					A5DB4925212BDA3D00E86CA6 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A5DB4906212BDA3B00E86CA6;
+					};
+				};
+			};
+			buildConfigurationList = A5DB4902212BDA3B00E86CA6 /* Build configuration list for PBXProject "TractorApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5DB48FE212BDA3B00E86CA6;
+			productRefGroup = A5DB4908212BDA3B00E86CA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5DB4906212BDA3B00E86CA6 /* TractorApp */,
+				A5DB491A212BDA3D00E86CA6 /* TractorAppTests */,
+				A5DB4925212BDA3D00E86CA6 /* TractorAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5DB4905212BDA3B00E86CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DB4915212BDA3D00E86CA6 /* LaunchScreen.storyboard in Resources */,
+				A5DB4912212BDA3D00E86CA6 /* Assets.xcassets in Resources */,
+				A55A05F8212C10F70028F79B /* MapBaseViewController.xib in Resources */,
+				A5DB4910212BDA3B00E86CA6 /* Main.storyboard in Resources */,
+				A5E1A1DD212E453800DE1A69 /* TractorListViewController.xib in Resources */,
+				A5E1A1E7212E80EC00DE1A69 /* NormalTableViewCell.xib in Resources */,
+				A5E1A1EB212E87B800DE1A69 /* SearchViewController.xib in Resources */,
+				A52F828721338F9D00ED6108 /* MapDialogView.xib in Resources */,
+				A5F3C828212D3B57009D3209 /* InforListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DB4919212BDA3D00E86CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DB4924212BDA3D00E86CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2091E3549228D2B26296AD7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TractorApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB16383E3B84B4DD89403773 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TractorApp/Pods-TractorApp-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TractorApp/Pods-TractorApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5DB4903212BDA3B00E86CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E1A1F6212E8FBC00DE1A69 /* UIView+ProgressHUD.swift in Sources */,
+				A5E1A1E6212E80EC00DE1A69 /* NormalTableViewCell.swift in Sources */,
+				A52EE41D21339ED30075EF83 /* MapNavigationHelper.swift in Sources */,
+				A5DB494C212BDF1B00E86CA6 /* MineTableViewController.swift in Sources */,
+				A5DB490B212BDA3B00E86CA6 /* AppDelegate.swift in Sources */,
+				A5DB493C212BDCC700E86CA6 /* BaseViewController.swift in Sources */,
+				A528DC17212FB058003522C8 /* UIButton+Extension.swift in Sources */,
+				A55A05FA212C11BD0028F79B /* AppKeys.swift in Sources */,
+				A5E1A1DC212E453800DE1A69 /* TractorListViewController.swift in Sources */,
+				A5FE2604212CEA0F00A36F16 /* UIView+Category.swift in Sources */,
+				A526F079212FA36200A40FB0 /* StructFile.swift in Sources */,
+				A5E1A1F1212E8B9100DE1A69 /* ConfigBaseViewController.swift in Sources */,
+				A5023426213002D800A79474 /* BBHandleCustomView.swift in Sources */,
+				A5DB4946212BDE8700E86CA6 /* HomepageViewController.swift in Sources */,
+				A5E1A1E0212E5C2500DE1A69 /* CollectViewController.swift in Sources */,
+				A502341D212FC69800A79474 /* HomeTabBarController.swift in Sources */,
+				A526F071212F866900A40FB0 /* NetworkManager.swift in Sources */,
+				A55A05F7212C10F70028F79B /* MapBaseViewController.swift in Sources */,
+				A5DB4941212BDD7F00E86CA6 /* ColorFile.swift in Sources */,
+				A5E1A1E3212E7C8A00DE1A69 /* KnowledgeDetailViewController.swift in Sources */,
+				A52F828521338F9400ED6108 /* MapDialogView.swift in Sources */,
+				A5DB494F212BE14E00E86CA6 /* AppDelegate+Exensions.swift in Sources */,
+				A502341B212FC0FE00A79474 /* LoginTableViewController.swift in Sources */,
+				A5E1A1ED212E8A8400DE1A69 /* MapDetailViewController.swift in Sources */,
+				A5DB4958212BFA8500E86CA6 /* ColorCategory.swift in Sources */,
+				A526F075212F9A0000A40FB0 /* NetworkReqeust+Extension.swift in Sources */,
+				A5DB4943212BDE0F00E86CA6 /* BaseUITabBarController.swift in Sources */,
+				A5E1A1D8212E423500DE1A69 /* UITableViewCell+XIBCategory.swift in Sources */,
+				A5E1A1EA212E87B800DE1A69 /* SearchViewController.swift in Sources */,
+				A5DB4948212BDEF800E86CA6 /* ListViewController.swift in Sources */,
+				A526F073212F8BFA00A40FB0 /* HttpUrl.swift in Sources */,
+				A5E1A1F8212E8FD200DE1A69 /* UIViewController+ProgressHUD.swift in Sources */,
+				A5023424212FDCE100A79474 /* BBScrollButtonView.swift in Sources */,
+				A5F3C827212D3B57009D3209 /* InforListTableViewCell.swift in Sources */,
+				A5023422212FCD1E00A79474 /* AppSetting.swift in Sources */,
+				A5DB494A212BDF0800E86CA6 /* KnowledgeViewController.swift in Sources */,
+				A502341F212FC9C600A79474 /* ResetPasswordTableViewController.swift in Sources */,
+				A5DB493E212BDCE600E86CA6 /* BaseUINavigationViewController.swift in Sources */,
+				A56EC9F321339B2000E7EBC0 /* MapDataManager.swift in Sources */,
+				A526F06F212F865500A40FB0 /* NetworkRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DB4917212BDA3D00E86CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DB4920212BDA3D00E86CA6 /* TractorAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DB4922212BDA3D00E86CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DB492B212BDA3D00E86CA6 /* TractorAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5DB491D212BDA3D00E86CA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5DB4906212BDA3B00E86CA6 /* TractorApp */;
+			targetProxy = A5DB491C212BDA3D00E86CA6 /* PBXContainerItemProxy */;
+		};
+		A5DB4928212BDA3D00E86CA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5DB4906212BDA3B00E86CA6 /* TractorApp */;
+			targetProxy = A5DB4927212BDA3D00E86CA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5DB490E212BDA3B00E86CA6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5DB490F212BDA3B00E86CA6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5DB4913212BDA3D00E86CA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5DB4914212BDA3D00E86CA6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5DB492D212BDA3D00E86CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5DB492E212BDA3D00E86CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5DB4930212BDA3D00E86CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0178B2123CB3E6A62DD48C42 /* Pods-TractorApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3AN76PB77;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = TractorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bill.bo.TractorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)//TractorApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5DB4931212BDA3D00E86CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4D11DDFC6CBD3CE563CEA09 /* Pods-TractorApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3AN76PB77;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = TractorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bill.bo.TractorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)//TractorApp-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5DB4933212BDA3D00E86CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C26N7R8Y2;
+				INFOPLIST_FILE = TractorAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bill.bo.TractorAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TractorApp.app/TractorApp";
+			};
+			name = Debug;
+		};
+		A5DB4934212BDA3D00E86CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C26N7R8Y2;
+				INFOPLIST_FILE = TractorAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bill.bo.TractorAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TractorApp.app/TractorApp";
+			};
+			name = Release;
+		};
+		A5DB4936212BDA3D00E86CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C26N7R8Y2;
+				INFOPLIST_FILE = TractorAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bill.bo.TractorAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TractorApp;
+			};
+			name = Debug;
+		};
+		A5DB4937212BDA3D00E86CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C26N7R8Y2;
+				INFOPLIST_FILE = TractorAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bill.bo.TractorAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TractorApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5DB4902212BDA3B00E86CA6 /* Build configuration list for PBXProject "TractorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DB492D212BDA3D00E86CA6 /* Debug */,
+				A5DB492E212BDA3D00E86CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5DB492F212BDA3D00E86CA6 /* Build configuration list for PBXNativeTarget "TractorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DB4930212BDA3D00E86CA6 /* Debug */,
+				A5DB4931212BDA3D00E86CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5DB4932212BDA3D00E86CA6 /* Build configuration list for PBXNativeTarget "TractorAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DB4933212BDA3D00E86CA6 /* Debug */,
+				A5DB4934212BDA3D00E86CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5DB4935212BDA3D00E86CA6 /* Build configuration list for PBXNativeTarget "TractorAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DB4936212BDA3D00E86CA6 /* Debug */,
+				A5DB4937212BDA3D00E86CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5DB48FF212BDA3B00E86CA6 /* Project object */;
+}
